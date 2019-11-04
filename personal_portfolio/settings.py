@@ -25,7 +25,7 @@ SECRET_KEY = '3x7m4c9z_)d@gj&4ge=1)4h8)yyd8-)!&z3qq6$s+oa0$@e2*5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['kelsonflint-portfolio.herokuapp.com', "127.0.0.1"]
+ALLOWED_HOSTS = ['kelsonflint-portfolio.herokuapp.com', "127.0.0.1", "www.kelsonflint.com"]
 
 
 # Application definition
