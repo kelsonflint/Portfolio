@@ -376,7 +376,7 @@
 <div id="cv" class="instaFade">
 	<div class="mainDetails">
 		<div id="headshot" class="quickFade">
-			<img src="img/headshot.jpg" alt="Kelson Flint" />
+			{% load static %} <img src="{% static "images/headshot.jpg" %}">
 		</div>
 
 		<div id="name">
@@ -463,11 +463,29 @@ Learned the importance of communication and cross-functional teamwork from worki
 
 			<div class="sectionContent">
 				<article>
-					<h2>College/University</h2>
-					<p class="subDetails">B.S. in Informatics (2021)</p>
-					<p>Concetrating on Data Science and Software Engineering with a minor in Mathematical Physics.</p>
+					<h2>University of Washington - Seattle</h2>
+					<p class="subDetails">B.S. in Informatics (2021) - 3.60 GPA</p>
+					<p>Concetration in Data Science and Software Engineering with a minor in Mathematical Physics.</p>
 				</article>
 
+			</div>
+			<div class="clear"></div>
+		</section>
+
+    <section>
+			<div class="sectionTitle">
+				<h1>Interests</h1>
+			</div>
+
+			<div class="sectionContent">
+				<ul class="keySkills">
+					<li>Software Development</li>
+					<li>Quantum Computing</li>
+					<li>Machine Learning</li>
+					<li>Data Science</li>
+					<li>Climbing</li>
+					<li>Esports</li>
+				</ul>
 			</div>
 			<div class="clear"></div>
 		</section>
