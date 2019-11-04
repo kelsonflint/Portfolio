@@ -13,6 +13,16 @@
         <br>
         <h5>Technology used:</h5>
         <p>{{ project.technology }}</p>
+        <br>
+        {% if project.gitlink != "N/A" %}
+          <h5>Github:</h5>
+          <p><a href="{{ project.gitlink }}">{{ project.title }}</a></p>
+          <br>
+        {% endif %}
+        {% if project.website != "N/A" %}
+          <h5>Website:</h5>
+          <p><a href="{{ project.website }}">{{ project.website }}</a></p>
+        {% endif %}
     </div>
 </div>
 {% endblock %}

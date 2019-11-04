@@ -7,32 +7,34 @@
 <html>
 <head>
   <style type="text/css">
-    .nav {
-      height:80px;
+
+    nav {
+      height:70px;
       width:100%;
       position: fixed;
       z-index:1;
       top:0;
       Left:0;
-      background-color:#111;
+      background-color:#4e545a;
       overflow-x: :hidden;
-      padding-top:20px
+      /*padding-top:20px*/
     }
 
-    .nav a {
-      padding:6px 8px 16px;
+    nav a {
+      padding: 14px 16px;
       text_decoration: none;
+      text-align: center;
       font-size:25px;
-      color: #818181;
+      color: #FFFFFF;
       display:block;
     }
 
-    .nav a:hover {
-      color: #f1f1f1;
+    nav a:hover {
+      color: #FF9F33;
     }
 
     .main {
-      margin-top:80px;
+      margin-top:10px;
       padding: 0px 10px;
     }
 
@@ -42,12 +44,32 @@
 
   <title>{% block title %}Kelson's Site{% endblock %}</title>
 </head>
-
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/projects">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/about">About Me</a>
+            </li>
+        </ul>
+    </div>
+    <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="#">Kelson Flint</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</header>
 <body>
-  <div class="nav">
+  <!-- <div class="nav">
     <a href="">Home</a>
-    <a href="/about">About</a>
-  </div>
+    <a href="/about">About Me</a>
+    <h1 id="me">Kelson Flint</h1>
+  </div> -->
+
   <div id="content", name="content", class="main">
     {% block page_content %}
     {% endblock %}

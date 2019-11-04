@@ -5,3 +5,5 @@ class Project(models.Model):
     description = models.TextField()
     technology = models.CharField(max_length=20)
     image = models.FilePathField(path="/img")
+    gitlink = models.TextField(default = "N/A")
+    website = models.TextField(default = "N/A")
