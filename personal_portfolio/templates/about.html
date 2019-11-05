@@ -372,12 +372,14 @@
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 </head>
+{% extends "base.html"}
+{% block page_content %}
 <body id="top">
 <div id="cv" class="instaFade">
 	<div class="mainDetails">
-		<div id="headshot" class="quickFade">
+		<!-- <div id="headshot" class="quickFade">
 			{% load static %} <img src="{% static "images/headshot.jpg" %}">
-		</div>
+		</div> -->
 
 		<div id="name">
 			<h1 class="quickFade delayTwo">Kelson Flint</h1>
@@ -418,17 +420,23 @@
 				<article>
 					<h2>Software developer at Glimpse Wearables</h2>
 					<p class="subDetails">October 2018 - Present</p>
-					<p>Startup funded by Amazon Catalyst.
-Led the development of a Swift iOS app that worked in conjunction with our own hardware.
-Assisted the design and development backend services including databases, API’s, and customizable requests for all front-end services.</p>
-				</article>
+					<ul>
+            <li>Startup funded by Amazon Catalyst.</li>
+            <li>Led the development of a Swift iOS app that worked in conjunction with our own hardware.</li>
+            <li>Assisted the design and development backend services including databases, API’s, and customizable requests for all front-end services.</li>
+            <br>
+          </ul>
+        </article>
 
 				<article>
 					<h2>Intern at Revel</h2>
 					<p class="subDetails">Summer 2017</p>
-					<p>Worked on and updated the store interface using HTML, CSS, and JavaScript.
-Exposed to back end development, marketing strategies, and Golang.
-Learned the importance of communication and cross-functional teamwork from working with others in the office-space.</p>
+					<ul>
+            <li>Worked on and updated the store interface using HTML, CSS, and JavaScript.</li>
+            <li>Exposed to back end development, marketing strategies, and Golang.</li>
+            <li>Learned the importance of communication and cross-functional teamwork from working with others in the office-space.</li>
+            <br>
+          </ul>
 				</article>
 			</div>
 			<div class="clear"></div>
@@ -502,4 +510,5 @@ pageTracker._initData();
 pageTracker._trackPageview();
 </script>
 </body>
+{% endblock %}
 </html>
